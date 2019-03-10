@@ -1,0 +1,48 @@
+<html>
+<style>
+body{
+background: linear-gradient(-180deg, #ffffff  ,#5D605D);
+}
+#div5{
+	float:center;
+	margin-top:180px;
+	margin-left:20px;
+	height:175px;
+	width:277px;
+	background:linear-gradient(-180deg,#F2F25E ,#ffffff);
+	border:groove;
+	border-color:;grey
+}
+
+.sign {
+  padding: 10px 20px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.sign:hover {background-color: #3e8e41}
+
+.sign:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<center>
+<h1>ENTER STUDENT ID AND PASSWORD</h1>
+<div id=div5>
+<form action=up.jsp method=post>
+INSERT YOUR STID:<input type=text name=stn id=stname required><br><br>
+INSERT YOUR PASSWORD:<input type=password name=pass id=stpass reqiured><br><br>
+<button class="sign" id="b6">SUBMIT</button>
+</form>
+</div>
+</center>
+</html>

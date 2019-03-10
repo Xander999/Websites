@@ -1,0 +1,24 @@
+<%@include file="connect.jsp"%>
+
+<%String a=request.getParameter("stn");
+String name,pic,pass,dob,phn,email,adr,gen;
+try{
+PreparedStatement pst=c.prepareStatement("select * from STD where STD_ID=?");
+ c.setString(1,a);
+
+ResultSet rs=pst.executeQuery();
+if(rs.next()){
+name=rs.getString(2);
+pic=rs.getString(3);
+pass=rs.getString(4);
+dob=rs.getString(5);
+phn=rs.getString(6);
+email=rs.getString(7);
+adr=rs.getString(8);
+gen=rs.getString(9);
+}
+
+c.close;
+out.println(a+"\n "+name+"\n    "+pic+"\n   "+pass+"\n    "+dob+"\n     "+phn+"\n      "+email+" \n   "+adr+"\n   "+gen);
+}catch(Exception e){ out.println(e);
+%>

@@ -1,0 +1,119 @@
+<html>
+<title>XIST College OFFICIAL PAGE></title>
+
+<head>
+<link rel="stylesheet" href="style.css"/>
+
+<style>
+body{
+background: linear-gradient(-180deg, #ffffff  ,#5D605D);
+}
+#div3{
+	float:left;
+	margin-top:20px;
+	margin-left:5px;
+	height:175px;
+	width:177px;
+	background:linear-gradient(-180deg,#F2F25E ,#ffffff);
+	border:groove;
+	border-color:;grey
+}
+.sign {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.sign:hover {background-color: #3e8e41}
+
+.sign:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+</head>
+
+<script>
+var sli=1;
+show(sli);
+
+function pp(n){
+show(sli+=n);
+}
+function show(n){
+var i;
+var x=document.getElementsByClassName("slides");
+if(n>x.length){ sli=1}
+if(n<1){sli=x.length};
+for(i=0;i<x.length;i++){
+x[i].style.display="none";
+}
+x[sli-1].style.display="block"
+}
+</script>
+
+<center>
+<img src="Xand.jpeg" alt="xxx" width="400" height="80" border=3 aling="left"/> </Center>
+<body>
+</center>
+<form action="Admin.jsp" method=post>
+<div class="w3-display-topright w3-padding"><button class="sign" id="b3">ADMIN</button></div>
+</form>
+
+<fieldset>
+<legend><head><strong><h2 style="color:green;"><u>WELCOME STUDENTS</u></h2></strong></head></legend>
+<p> Welcome to the official Website Xander Institute Of Science And Technology.
+Admission starts at <b style="color:darkred;">12/04/2018</b>.<br> Stipulated Description of admission and courses are given below.  </p>
+<font size="3.5" color="red" > <marquee bgcolor="green"><b> £ This website is not an official.Its a Test Site created for Class Assingments.
+For further enquiery contact Suraj aka Xander... at sahasuraj420@gmail.com.##</b> </marquee><font>
+</fieldset>
+<center>
+<table>
+<tr> 
+	<td><li><a href="insertpro/insert.jsp" target="_blank">INSERT ADMISSION DETAILS</a><sup><img src="ff.gif"/></sup><br></td>
+</tr>
+<tr>
+	<td><li><a href="updatepro/update.html">UPDATE ADMISSION DETAILS</a><br></td>
+</tr>
+<tr>
+	<td><li><a href="showadpro/fetch.html">SHOW ADMISSION DETAILS</a><br></td>
+</tr>
+</table>
+<div id=div3>
+<font size="3.5" color="black" > <marquee height=160 hspace=20 behavior=alternate scrolldelay=200 direction=up onmouseover="this.stop();" onmouseout="this.start();" ><b> <a href="notify1.jsp">Check Notification</a> <br><br><a href="query1.jsp">Enter Queries</a><br><br> <a href="contacts.html">Contacts</a></b> </marquee><font>
+</fieldset>
+</div>
+
+</center>
+<div id="container">
+<img class="slides" src="Am1.jpg" alt="Xander Institute Of Science And Technology"  title="Night View Of XIST in Kolkata" width="750" height="300"/>
+<img class="slides" src="Am2.jpg" alt="Xander Institute Of Science And Technology"  title="Drone-Copter View Of The University"/ width="750" height="300">
+<img class="slides" src="Am3.jpg" alt="Xander Institute Of Science And Technology"  title="Xander Institute Of Sciene and Technolgy in Kolkata"/ width="750" height="300">
+<img class="slides" src="Am4.jpg" alt="Xander Institute Of Science And Technology"  title="Xander Institute Of Sciene and Technolgy in Kolkata"/ width="750" height="300">
+<img class="slides" src="Am5.jpg" alt="Xander Institute Of Science And Technology"  title="Xander Institute Of Sciene and Technolgy in Kolkata"/ width="750" height="300">
+<img class="slides" src="Am6.jpg" alt="Xander Institute Of Science And Technology"  title="Xander Institute Of Sciene and Technolgy in Kolkata"  width="750" height="300"/>
+<img class="slides" src="amu.jpeg" alt="Xander Institute Of Science And Technology"  title="Xander Institute Of Sciene and Technolgy in Kolkata" width="750" height="300"/>
+<button class="btn" id="b1" onclick="pp(-1)">&#10094;</button>
+<button class="btn" id="b2" onclick="pp(+1)">&#10095;</button>
+</div>
+<center>
+<p style="color:red;">A Large And Marvellous Structure Of XIST Campus At Kolkata near Joka IIM </p>
+</center>
+
+<!--
+<img src="amu.jpeg" alt="Xander Institute Of Science And Technology"
+ title="Xander Institute Of Sciene and Technolgy in Kolkata" border=2 width="750" height="300" /> 
+//-->
+
+</body>
+
+</html>
